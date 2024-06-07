@@ -16,10 +16,10 @@ const useFetchData = () => {
             await axios.get(API_URL)
                 .then((res) => {
                     // console.log("Log from Custom hook -", res?.data)
-                    setTimeout(() => {
+                    // setTimeout(() => {
                     SetData(res?.data)
                     dispatch(adddata(res?.data))
-                    }, 5000);
+                    // }, 5000);
 
                 }).catch((err) => {
                     console.warn(err)
