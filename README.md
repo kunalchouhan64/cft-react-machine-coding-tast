@@ -1,6 +1,6 @@
 Libraries / Package Used
 
--npm i axios \n
+-npm i axios 
 -npm install @reduxjs/toolkit react-redux
 -npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
 -npm i react-toastify
