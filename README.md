@@ -1,4 +1,14 @@
-Requirements: 
+Libraries / Package Used
+
+-npm i axios
+-npm install @reduxjs/toolkit react-redux
+-npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
+-npm i react-toastify
+-npm i react-router-dom
+-tailwind css
+
+Requirements:
+
 - Get the post data from the API-
   GET https://jsonplaceholder.typicode.com/posts 🟩DONE
 
@@ -12,13 +22,14 @@ Requirements:
 
 - Application should display Loading... for 5 sec on startup then it should display cards.🟩DONE
 
-- View Toggle button should toggle the card design.🟩DONE 
+- View Toggle button should toggle the card design.🟩DONE
 
-- We are Listening button should open a feedback form.🟩DONE 
-- Feedback form should be reset on submit.🟩DONE 
-- Feedback form can be submitted, if all the fields are entered correctly.🟩DONE 
+- We are Listening button should open a feedback form.🟩DONE
+- Feedback form should be reset on submit.🟩DONE
+- Feedback form can be submitted, if all the fields are entered correctly.🟩DONE
 
 Guidelines:
+
 - You can use any library to build UI components. TAILWIND CSS USED
-- Should have clean code & structure. 🟩DONE 
+- Should have clean code & structure. 🟩DONE
 - Naming of components & variables should be appropriate. 🟩DONE
