@@ -15,11 +15,12 @@ const useFetchData = () => {
         try {
             await axios.get(API_URL)
                 .then((res) => {
-                    // console.log("Log from Custom hook -", res?.data)
-                    // setTimeout(() => {
-                    SetData(res?.data)
-                    dispatch(adddata(res?.data))
-                    // }, 5000);
+
+                    //⭐ Adding 5 Second Timout According to the task Requirements
+                    setTimeout(() => {
+                        SetData(res?.data)
+                        dispatch(adddata(res?.data))
+                    }, 5000);
 
                 }).catch((err) => {
                     console.warn(err)
@@ -34,6 +35,7 @@ const useFetchData = () => {
         FetchData()
     }, [])
 
+    // Returning the data from the custom Hook
     return data;
 }
 

@@ -11,6 +11,7 @@ import FeedbackForm from './FeedbackForm'
 
 const Home = () => {
     const dispatch = useDispatch()
+    //⭐ Calling the hook and fetching the data from API
     const data = useFetchData()
     //⭐ Subscribing the store for the toggle design
     const toggledesign = useSelector(store => store.toggleview.default)

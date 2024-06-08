@@ -28,25 +28,33 @@ const FeedbackForm = () => {
     const HandleSubmit = (e) => {
         // Preventing the page refreshing...
         e.preventDefault()
+        // Checking Email Validation
+        const emailregixvalidation = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(emailid)
 
-        //⭐ Setting user Feedback to Local Storage ( User Details API was not Available)
-        localStorage.setItem('user-feedback', JSON.stringify({
-            firstname: fname,
-            lastname: lname,
-            address: address,
-            country: country,
-            emailid: emailid,
-            number: number
-        }))
-        // Emtpy all the states after form submission
-        SetfName('')
-        SetLName('')
-        SetAddress('')
-        SetCountry('')
-        SetEmailID('')
-        SetNumber('')
-        // Toast alert message for the success of data submission
-        toast('"Feedback Form Submitted Successfully...!"')
+        if (emailregixvalidation) {
+            //⭐ Setting user Feedback to Local Storage ( User Details API was not Available)
+            localStorage.setItem('user-feedback', JSON.stringify({
+                firstname: fname,
+                lastname: lname,
+                address: address,
+                country: country,
+                emailid: emailid,
+                number: number
+            }))
+            // Emtpy all the states after form submission
+            SetfName('')
+            SetLName('')
+            SetAddress('')
+            SetCountry('')
+            SetEmailID('')
+            SetNumber('')
+            // Toast alert message for the success of data submission
+            toast('"Feedback Form Submitted Successfully...!"')
+        } else {
+            alert('Please Enter Details Correctly..!!')
+
+        }
+
 
     }
     const HandleToggleForm = () => {
