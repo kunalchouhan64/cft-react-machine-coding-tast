@@ -1,4 +1,4 @@
-⭐script to start project: npm run dev
+⭐script to start project:👉 npm run dev
 
 
 ⭐Libraries / Package Used
