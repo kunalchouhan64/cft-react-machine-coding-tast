@@ -1,4 +1,7 @@
-Libraries / Package Used
+⭐script to start project: npm run dev
+
+
+⭐Libraries / Package Used
 
 -npm i axios 
 -npm install @reduxjs/toolkit react-redux
@@ -7,7 +10,7 @@ Libraries / Package Used
 -npm i react-router-dom
 -tailwind css
 
-Requirements:
+⭐Requirements:
 
 - Get the post data from the API-
   GET https://jsonplaceholder.typicode.com/posts 🟩DONE
@@ -28,7 +31,7 @@ Requirements:
 - Feedback form should be reset on submit.🟩DONE
 - Feedback form can be submitted, if all the fields are entered correctly.🟩DONE
 
-Guidelines:
+⭐Guidelines:
 
 - You can use any library to build UI components. TAILWIND CSS USED
 - Should have clean code & structure. 🟩DONE
