@@ -10,7 +10,7 @@ const Pagination = ({ toggledesign, HandlePageClick, HandleNext, HandlePrev, dat
                         return (
                             <>
                                 <div key={i + 1}>
-                                    <span className={`py-2 shadow-md shadow-slate-400 text-lg font-Raleway px-4 bg-white rounded-full mx-1 cursor-pointer ${page === i + 1 ? 'bg-white' : 'bg-gray-300 text-black'}`} onClick={() => HandlePageClick(i + 1)} key={i + 1}>{i + 1}</span>
+                                    <span className={`py-2 shadow-md shadow-slate-400 text-lg font-Raleway px-4 rounded-full mx-1 cursor-pointer ${page === i + 1 ? 'bg-white' : 'bg-gray-400 text-black'}`} onClick={() => HandlePageClick(i + 1)} key={i + 1}>{i + 1}</span>
                                 </div>
                             </>
                         )
@@ -18,6 +18,7 @@ const Pagination = ({ toggledesign, HandlePageClick, HandleNext, HandlePrev, dat
                 }
                 <button onClick={() => HandleNext()} className='py-2 px-4 bg-green-600 text-white'>Next 6 Card</button>
             </div>
+           
         </>
     )
 }
